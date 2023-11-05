@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://carlsack.github.io/tags/prometheus/"/>
+  
+  <link rel="canonical" href="https://carlsack.github.io/2023/08/17/ubuntu-22-04-3系统pxe自动化安装部署/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,18 +33,22 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>标签：prometheus - CarlSack Blog</title>
-  <meta name="keywords" content="null">
+  <title>Ubuntu 22.04.3系统PXE自动化安装部署 - CarlSack Blog</title>
+  <meta name="keywords" content="linux,运维,null">
   <meta desc name="description" content="CarlSack Blog - CarlSack - CarlSack Blog">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="CarlSack Blog">
-<meta property="og:url" content="https://carlsack.github.io/tags/prometheus/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ubuntu 22.04.3系统PXE自动化安装部署">
+<meta property="og:url" content="https://carlsack.github.io/2023/08/17/Ubuntu-22-04-3%E7%B3%BB%E7%BB%9FPXE%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/index.html">
 <meta property="og:site_name" content="CarlSack Blog">
-<meta property="og:description" content="CarlSack Blog">
+<meta property="og:description" content="Ubuntu 22.04.3系统PXE自动化安装部署1、梗概​	由于工作需求，需要批量安装ubuntu22.04 桌面版系统，决定使用PXE方式进行部署省去重复点击操作，也方便后续复用，但是发现单纯的PXE设置只能是引导系统，需要应用kickstart之类配置来实现PXE引导之后自动化安装工作，所以准备记录实现一整套PXE自动化安装部署操作文档。 1.1 PXE简介​	PXE，就是预启动执行环境，">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2023-08-17T14:19:13.000Z">
+<meta property="article:modified_time" content="2023-08-16T14:39:58.350Z">
 <meta property="article:author" content="CarlSack">
+<meta property="article:tag" content="linux">
+<meta property="article:tag" content="运维">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2255,7 +2259,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper  search' style="display: none;">
+      <div id="none" class='cover-wrapper post search' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://my-bucket-1253370346.cos.ap-hongkong.myqcloud.com/3m7.jpg"></div>
 
@@ -2323,25 +2327,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-
 <div id="l_main" class=''>
-  
-    
-      
-  <section class="post-list">
-    
-      
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://carlsack.github.io/2023/08/03/promethus基础/">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://carlsack.github.io/2023/08/17/Ubuntu-22-04-3系统PXE自动化安装部署/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="CarlSack Blog">
   </span>
@@ -2350,66 +2338,274 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="CarlSack Blog">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/08/03/promethus%E5%9F%BA%E7%A1%80/"  itemprop="url">
-        Prometheus 基础介绍
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
     
-      
-        Prometheus监控系统什么是Prometheus?Prometheus是由SoundCloud开发的开源监控报警系统和时序列数据库(TSDB)。Prometheus使用Go语言开发，是Google BorgMon监控系统的开源版本。2016年由Google发起Linux基金会旗下的原生云基金会(Cloud Native Computing Foundation), 将Prometheu...
-      
     
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
+      <h1 class="title" itemprop="name headline">
+        Ubuntu 22.04.3系统PXE自动化安装部署
+      </h1>
+      <div class='new-meta-box'>
         
-        <time itemprop="dateCreated datePublished" datetime="2023-08-03T15:35:21+08:00">2023-08-03</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a>
           
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url"><span itemprop="name">学习</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/08/03/promethus%E5%9F%BA%E7%A1%80/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' target="_blank" href="https://github.com/carlsack/" rel="nofollow noopener">
+    <img itemprop="image" src="https://my-bucket-1253370346.cos.ap-hongkong.myqcloud.com/boy.png" class="lazyload" data-srcset="https://my-bucket-1253370346.cos.ap-hongkong.myqcloud.com/boy.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">CarlSack</p>
+  </a>
 </div>
 
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/%E5%B7%A5%E4%BD%9C/">工作</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%E5%B7%A5%E4%BD%9C/" itemprop="url"><span itemprop="name">工作</span></a>
+      </span>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-08-17T22:19:13+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2023年8月17日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>字数：655 字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>时长：2 分钟</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+
+
+<div class="new-meta-item browse">
+  <a class='notlink'>
+    <p>
+      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
+      
+      <span id="busuanzi_value_page_pv"><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span>
+      
+      <span>次浏览</span>
+    </p>
+  </a>
+</div>
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h2 id="Ubuntu-22-04-3系统PXE自动化安装部署"><a href="#Ubuntu-22-04-3系统PXE自动化安装部署" class="headerlink" title="Ubuntu 22.04.3系统PXE自动化安装部署"></a>Ubuntu 22.04.3系统PXE自动化安装部署</h2><h2 id="1、梗概"><a href="#1、梗概" class="headerlink" title="1、梗概"></a>1、梗概</h2><p>​	由于工作需求，需要批量安装ubuntu22.04 桌面版系统，决定使用PXE方式进行部署省去重复点击操作，也方便后续复用，但是发现单纯的PXE设置只能是引导系统，需要应用<strong>kickstart</strong>之类配置来实现PXE引导之后自动化安装工作，所以准备记录实现一整套PXE自动化安装部署操作文档。</p>
+<h3 id="1-1-PXE简介"><a href="#1-1-PXE简介" class="headerlink" title="1.1 PXE简介"></a>1.1 PXE简介</h3><p>​	PXE，就是预启动执行环境，是一种引导启动的方式。这种协议一般由两部分构成，一部分是服务器端，一个是客户端。简单来说，我们通过这种方式可以自己创建一个“安装源”，在安装系统的时候只要能找到这个“源”便可以实现系统的安装。在实现无人值守的安装前，我们必须要搭建一些服务，来实现“安装源”的建立，例如ftp、http、tftp、dhcp等。当一台主机启动时，标准输入输出会将PXE客户端调入我们的内存中进行相关的操作，并提示相关的选项，在这里我们可以进行选择。PXE的客户端通过网络下载(download)启动文件到本地运行。</p>
+<p>​	具体过程是，PXE客户端通过网卡向局域网内发送ip请求，然后DHCP服务器会提供给给它一个ip地址和系统安装所需要的文件，接下使用接收到的文件进行系统安装。而安装的过程又需要其他服务器提供的资源，例如：yum源，内核文件等，当主机拿到这些资源，便可以顺利的安装了。</p>
+<p>​	最终结果是：任意一台主机在选着网络启动时会获取DHCP服务器分发的ip，通过通过获取到的ip地址与局域网内的TFTP服务器通信并获取启动文件，与FTP或者HTTP通信并获取yum源文件及内核文件等。之后开始自动安装，而这个过程不需要人在做任何操作。</p>
+<p>​	PXE安装优点，这种安装系统的方式可以不受光驱，光盘以及一些外部设备的限制，还可以做到无人值守，大大减轻了运维人员的工作负荷，像在一些主机数量庞大的机房进行批量安装，PXE将是你不二的选择。</p>
+<h2 id="2、准备工作"><a href="#2、准备工作" class="headerlink" title="2、准备工作"></a>2、准备工作</h2><p>需要准备如下文件</p>
+<ul>
+<li>ubuntu-22.04.3-desktop-amd64.iso</li>
+<li></li>
+</ul>
+<h2 id="3、开始安装"><a href="#3、开始安装" class="headerlink" title="3、开始安装"></a>3、开始安装</h2>
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+        
+          
+          <div class="copyright license">
+            <div class="license-title">Ubuntu 22.04.3系统PXE自动化安装部署</div>
+            <div class="license-link"><a href="https://carlsack.github.io/2023/08/17/Ubuntu-22-04-3系统PXE自动化安装部署/">https://carlsack.github.io/2023/08/17/Ubuntu-22-04-3系统PXE自动化安装部署/</a>
+            </div>
+            <div class="license-meta">
+              <div class="license-meta-item">
+                <div class="license-meta-title">本文作者</div>
+                <div class="license-meta-text">CarlSack</div>
+              </div>
+              <div class="license-meta-item">
+                <div class="license-meta-title">发布于</div>
+                <div class="license-meta-text">2023年8月17日</div>
+              </div>
+              
+              <div class="license-meta-item">
+                <div class="license-meta-title">更新于</div>
+                <div class="license-meta-text">2023年8月16日</div>
+              </div>
+              
+              
+              <div class="license-meta-item">
+                <div class="license-meta-title">许可协议</div>
+                <div class="license-meta-text">允许规范转载</div>
+              </div>
+            </div>
+            <div class="license-statement">转载请保留本文转载地址，著作权归作者所有！</div>
           </div>
         
       
-    
-  </section>
+      <!-- 打赏组件 -->
+      
+    </div>
+  
   
     
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-08-16T22:39:58+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2023年8月16日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>字数：655 字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>时长：2 分钟</p>
+    </a>
+  </div>
+
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/linux/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>linux</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E8%BF%90%E7%BB%B4/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>运维</p></a></div>
+  <span hidden itemprop="keywords">linux 运维</span>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2023/08/03/promethus%E5%9F%BA%E7%A1%80/'>
+          <p class='title'>Prometheus 基础介绍<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>Prometheus监控系统什么是Prometheus?Prometheus是由SoundCloud开发的开源监控报警系统和时序列数据库(TSDB)。Prometheus使用Go语言开发，是Go...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
   
 
 
+  <article class="post white-box shadow floatable blur" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/2023/08/17/Ubuntu-22-04-3%E7%B3%BB%E7%BB%9FPXE%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/index.html#comments">
+    </span>
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
-  
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2418,130 +2614,48 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget blogger desktop mobile pjax">
-  <div class='content'>
     
-      
-        <div class='avatar'>
-          <img no-lazy src='https://avatars.githubusercontent.com/u/26732822?v=4'/>
-        </div>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">[object Object]</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="https://carlsack.github.io"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:carlsack@foxmail.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/carlsack"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget category desktop pjax">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/%E5%AD%A6%E4%B9%A0/" href="/categories/%E5%AD%A6%E4%B9%A0/"
-            active-action="action-categoriesE5ADA6E4B9A0"
-            ><div class='name'>学习</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E5%B7%A5%E4%BD%9C/" href="/categories/%E5%B7%A5%E4%BD%9C/"
-            active-action="action-categoriesE5B7A5E4BD9C"
-            ><div class='name'>工作</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/linux/" style="font-size: 14px; color: #999">linux</a> <a href="/tags/prometheus/" style="font-size: 14px; color: #999">prometheus</a> <a href="/tags/%E7%9B%91%E6%8E%A7/" style="font-size: 14px; color: #999">监控</a> <a href="/tags/%E8%BF%90%E7%BB%B4/" style="font-size: 24px; color: #555">运维</a>
-    </div>
-  </section>
-
-
-    
-  
-
   
 
 
 <div class="widget-sticky pjax">
 
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Ubuntu-22-04-3%E7%B3%BB%E7%BB%9FPXE%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"><span class="toc-text">Ubuntu 22.04.3系统PXE自动化安装部署</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E6%A2%97%E6%A6%82"><span class="toc-text">1、梗概</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-PXE%E7%AE%80%E4%BB%8B"><span class="toc-text">1.1 PXE简介</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="toc-text">2、准备工作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81%E5%BC%80%E5%A7%8B%E5%AE%89%E8%A3%85"><span class="toc-text">3、开始安装</span></a></li></ol>
+    </div>
+  </section>
+
+  
+
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -2569,13 +2683,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3059,7 +3174,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"CarlSack Blog","url":"https://carlsack.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"CarlSack","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://carlsack.github.io/","sameAs":["https://github.com/volantis-x"],"description":"CarlSack Blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://carlsack.github.io/","name":"CarlSack Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://carlsack.github.io/tags/prometheus/","name":"prometheus"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"CarlSack Blog","url":"https://carlsack.github.io/","keywords":null,"description":"CarlSack Blog","author":{"@type":"Person","name":"CarlSack","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://carlsack.github.io/","description":"CarlSack Blog"},"publisher":{"@type":"Organization","name":"CarlSack Blog","url":"https://carlsack.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://carlsack.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"CarlSack Blog","inLanguage":["zh-CN","en","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"CarlSack","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://carlsack.github.io/"},"publisher":{"@type":"Organization","name":"CarlSack Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"CarlSack Blog","url":"https://carlsack.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"CarlSack","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://carlsack.github.io/","sameAs":["https://github.com/volantis-x"],"description":"CarlSack Blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://carlsack.github.io/","name":"CarlSack Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://carlsack.github.io/categories/工作/","name":"工作"}},{"@type":"ListItem","position":3,"item":{"@id":"https://carlsack.github.io/2023/08/17/Ubuntu-22-04-3系统PXE自动化安装部署/","name":"Ubuntu 22.04.3系统PXE自动化安装部署"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"CarlSack Blog","url":"https://carlsack.github.io/","keywords":null,"description":"CarlSack Blog","author":{"@type":"Person","name":"CarlSack","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://carlsack.github.io/","description":"CarlSack Blog"},"publisher":{"@type":"Organization","name":"CarlSack Blog","url":"https://carlsack.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://carlsack.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Ubuntu 22.04.3系统PXE自动化安装部署","description":"CarlSack Blog","inLanguage":["zh-CN","en","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://carlsack.github.io/2023/08/17/Ubuntu-22-04-3%E7%B3%BB%E7%BB%9FPXE%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/"},"author":{"@type":"Person","name":"CarlSack","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://carlsack.github.io/"},"publisher":{"@type":"Organization","name":"CarlSack Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://carlsack.github.io/2023/08/17/Ubuntu-22-04-3%E7%B3%BB%E7%BB%9FPXE%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/","wordCount":0,"datePublished":"2023-08-17T14:19:13.000Z","dateModified":"2023-08-16T14:39:58.350Z","articleSection":"工作","keywords":"linux,运维","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
