@@ -1628,7 +1628,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1706749781803),
+    lastupdate: new Date(1706750471036),
     sidebar: {
       for_page: ["blogger","category","tagcloud","archives"],
       for_post: ["toc"],
@@ -2481,7 +2481,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ firewall-cmd --zone=public --add-port=80/tcp --permanent</span><br><span class="line">$ firewall-cmd --reload</span><br></pre></td></tr></table></figure>
 
-<p><img src="/.io//639.png" class="lazyload" data-srcset="/.io//639.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="https://carlsack.github.io/2024/01/31/10%E4%B8%AANginx%E5%9F%BA%E6%9C%AC%E5%9C%BA%E6%99%AF/639.png" class="lazyload" data-srcset="https://carlsack.github.io/2024/01/31/10%E4%B8%AANginx%E5%9F%BA%E6%9C%AC%E5%9C%BA%E6%99%AF/639.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
 <p>rpm包中已包含了大量常用模块，推荐使用rpm包方式安装，简单快速</p>
 <h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><table>
 <thead>
@@ -2518,11 +2518,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <h1 id="实用场景"><a href="#实用场景" class="headerlink" title="实用场景"></a>实用场景</h1><h2 id="虚拟主机"><a href="#虚拟主机" class="headerlink" title="虚拟主机"></a>虚拟主机</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    # 1: 基于多ip的虚拟主机：listen监听不同网卡的ip，端口可相同</span><br><span class="line">    listen 8000;</span><br><span class="line">    server_name 172.17.1.1;</span><br><span class="line">    </span><br><span class="line">    listen 8000;</span><br><span class="line">    server_name 172.17.1.2;</span><br><span class="line">    </span><br><span class="line">    # 2: 基于多端口的虚拟主机：listen监听不同端口</span><br><span class="line">    listen 8001;</span><br><span class="line">    server_name localhost;</span><br><span class="line">    </span><br><span class="line">    listen 8002;</span><br><span class="line">    server_name localhost;</span><br><span class="line">    </span><br><span class="line">    #3: 基于域名的虚拟主机：端口可相同，server_name为不同域名</span><br><span class="line">    listen 8003;</span><br><span class="line">    server_name www.test1.com;</span><br><span class="line">    </span><br><span class="line">    listen 8003;</span><br><span class="line">    server_name www.test2.com;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="静态站点"><a href="#静态站点" class="headerlink" title="静态站点"></a>静态站点</h2><p>为了加快网站解析速度，可以将动态资源交给后端服务器，纯前端的静态页面放在系统目录下，交给Nginx来解析。</p>
-<p><img src="/.io//640.png" class="lazyload" data-srcset="/.io//640.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="https://carlsack.github.io/2024/01/31/10%E4%B8%AANginx%E5%9F%BA%E6%9C%AC%E5%9C%BA%E6%99%AF/640.png" class="lazyload" data-srcset="https://carlsack.github.io/2024/01/31/10%E4%B8%AANginx%E5%9F%BA%E6%9C%AC%E5%9C%BA%E6%99%AF/640.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    listen 80;</span><br><span class="line">    server_name localhost;</span><br><span class="line">    </span><br><span class="line">    location / &#123;</span><br><span class="line">          root   /opt/nginx/html;</span><br><span class="line">          index  index.html index.htm;</span><br><span class="line">      &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="反向代理"><a href="#反向代理" class="headerlink" title="反向代理"></a>反向代理</h2><p>反向代理是用户客户端访问代理服务器后，被反向代理服务器按照一定的规则从一个或多个被代理服务器中获取响应资源并返回给客户端的代理模式，客户端只知道代理服务器的 IP，并不知道后端服务器的 IP，原因是代理服务器隐藏了被代理服务器的信息。</p>
-<p><img src="/.io//641.jpg" class="lazyload" data-srcset="/.io//641.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="https://carlsack.github.io/2024/01/31/10%E4%B8%AANginx%E5%9F%BA%E6%9C%AC%E5%9C%BA%E6%99%AF/641.jpg" class="lazyload" data-srcset="https://carlsack.github.io/2024/01/31/10%E4%B8%AANginx%E5%9F%BA%E6%9C%AC%E5%9C%BA%E6%99%AF/641.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
 <h3 id="七层反向代理"><a href="#七层反向代理" class="headerlink" title="七层反向代理"></a>七层反向代理</h3><p>在配置文件nginx.conf中的http段中，写入如下格式的配置，即可将本地8088端口代理到百度：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    listen       8088;</span><br><span class="line">    server_name  localhost;</span><br><span class="line">    </span><br><span class="line">    location / &#123;</span><br><span class="line">        proxy_pass   https://www.baidu.com;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -3320,6 +3320,20 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <a class='prev' href='/2024/01/31/%E5%9B%BE%E7%89%87%E7%B4%A2%E5%BC%95/'>
           <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>图片索引</p>
           <p class='content'>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
